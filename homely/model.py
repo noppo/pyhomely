@@ -1,14 +1,17 @@
+import homely
+
+
 class Location:
 
     def __init__(self, data):
-        self._locataionId = data["locationId"]
-        self._userId = data["userId"]
-        self._name = data["name"]
-        self._role = data["role"]
-        self._gatewayserial = data["gatewayserial"]
+        self._locataionId = data['locationId'] if 'locationId' in data else None
+        self._userId = data['userId'] if 'userId' in data else None
+        self._name = data['name'] if 'name' in data else None
+        self._role = data['role'] if 'role' in data else None
+        self._gatewayserial = data['gatewayserial'] if 'gatewayserial' in data else None
 
     @property
-    def locataionId(self):
+    def locationId(self):
         return self._locataionId
 
     @property
@@ -31,15 +34,19 @@ class Location:
 class Home:
 
     def __init__(self, data):
-        self._locataionId = data["locationId"]
-        self._gatewayserial = data["gatewayserial"]
-        self._name = data["name"]
-        self._alarmState = data["alarmState"]
-        self._userRoleAtLocation = data["userRoleAtLocation"]
-        self.devices = []
+        self._locataionId = data['locationId'] if 'locationId' in data else None
+        self._gatewayserial = data['gatewayserial'] if 'gatewayserial' in data else None
+        self._name = data['name'] if 'name' in data else None
+        self._alarmState = data['alarmState'] if 'alarmState' in data else None
+        self._userRoleAtLocation = data['userRoleAtLocation'] if 'userRoleAtLocation' in data else None
+        self._devices = []
+        if 'devices' in data:
+            for device in data['devices']:
+                d = Device(device)
+                self._devices.append(d)
 
     @property
-    def locataionId(self):
+    def locationId(self):
         return self._locataionId
 
     @property
@@ -58,20 +65,30 @@ class Home:
     def userRoleAtLocation(self):
         return self._userRoleAtLocation
 
+    @property
+    def devices(self):
+        return self._devices
+
+
 
 class Device:
 
     def __init__(self, data):
-        self._id = data["id"]
-        self._name = data["name"]
-        self._location = data["location"]
-        self._online = data["online"]
-        self._modelId = data["modelId"]
-        self._modelName = data["modelName"]
+        self._id = data['id'] if 'id' in data else None
+        self._name = data['name'] if 'name' in data else None
+        self._location = data['location'] if 'location' in data else None
+        self._online = data['online'] if 'online' in data else None
+        self._modelId = data['modelId'] if 'modelId' in data else None
+        self._modelName = data['modelName'] if 'modelName' in data else None
+        self._features = []
+        if 'features' in data:
+            for type, states in data['features'].items():
+                f = Feature(type, states)
+                self._features.append(f)
 
     @property
-    def _id(self):
-        return self.id
+    def id(self):
+        return self._id
 
     @property
     def name(self):
@@ -90,8 +107,46 @@ class Device:
         return self._modelId
     
     @property
-    def modelNam(self):
+    def modelName(self):
         return self._modelName
 
+    @property
+    def features(self):
+        return self._features
+
 class Feature:
-    pass
+
+    def __init__(self, type, data):
+        self._type = type
+        self._states = []
+        if 'states' in data:
+            for type, states in data['states'].items():
+                s = State(type, states)
+                self._states.append(s)
+    
+    @property
+    def type(self):
+        return self._type
+    
+    @property
+    def states(self):
+        return self._states
+
+class State:
+
+    def __init__(self, type, data):
+        self._type = type
+        self._value = data['value'] if 'value' in data else None
+        self._lastupdated = data['lastUpdated'] if 'lastUpdated' in data else None
+
+    @property
+    def type(self):
+        return self._type
+
+    @property
+    def value(self):
+        return self._value
+
+    @property
+    def lastupdated(self):
+        return self._lastupdated
