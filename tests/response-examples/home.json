@@ -1,0 +1,476 @@
+{
+    "locationId": "2746e337-3848-44c6-ba43-96871273daaa",
+    "gatewayserial": "020032010000E771",
+    "name": "Home",
+    "alarmState": "DISARMED",
+    "userRoleAtLocation": "OWNER",
+    "devices": [
+        {
+            "id": "eae62cf2-40aa-4a2e-9ff8-1cd17a8e74cb",
+            "name": "Røyksensor Soverom",
+            "serialNumber": "0015BC0031004DF2",
+            "location": "Floor 2 - Bedroom",
+            "online": false,
+            "modelId": "ffe30099-92c5-4471-879f-41f412d423ab",
+            "modelName": "Smoke Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "fire": {
+                            "value": false,
+                            "lastUpdated": "2020-04-10T10:18:54.969Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 22.5,
+                            "lastUpdated": "2022-05-18T22:15:50.593Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-04-10T10:18:54.958Z"
+                        },
+                        "voltage": {
+                            "value": 3,
+                            "lastUpdated": "2022-04-04T07:39:42.051Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 47,
+                            "lastUpdated": "2022-05-18T22:14:50.621Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-05-25T05:27:39.476Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "752ba066-44ad-4109-ace3-183113480725",
+            "name": "Røyksensor Kontor",
+            "serialNumber": "0015BC0031003355",
+            "location": "Floor -1 - Basement",
+            "online": true,
+            "modelId": "ffe30099-92c5-4471-879f-41f412d423ab",
+            "modelName": "Smoke Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "fire": {
+                            "value": false,
+                            "lastUpdated": "2020-03-04T00:22:28.886Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 20.8,
+                            "lastUpdated": "2022-05-19T18:57:47.311Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-03-04T00:22:28.875Z"
+                        },
+                        "voltage": {
+                            "value": 2.9,
+                            "lastUpdated": "2022-05-12T03:35:30.053Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 89,
+                            "lastUpdated": "2022-05-19T18:38:02.382Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-05-25T01:40:59.535Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "4e1d2b23-4d73-4fc9-9ef6-552e37808c3c",
+            "name": "Røyksensor Kjøkken",
+            "serialNumber": "0015BC00310053CF",
+            "location": "Floor 1 - Kitchen",
+            "online": true,
+            "modelId": "ffe30099-92c5-4471-879f-41f412d423ab",
+            "modelName": "Smoke Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "fire": {
+                            "value": false,
+                            "lastUpdated": "2021-07-28T17:42:15.655Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 23.4,
+                            "lastUpdated": "2022-05-19T19:06:28.843Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-04-10T08:57:32.006Z"
+                        },
+                        "voltage": {
+                            "value": 2.8,
+                            "lastUpdated": "2022-03-05T11:00:01.169Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 84,
+                            "lastUpdated": "2022-05-19T18:16:28.493Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-05-25T02:26:19.592Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "3f7fb9a8-30f0-4214-b95a-9aaaf6ae5410",
+            "name": "Vannsensor Kjøkken",
+            "serialNumber": "0015BC0033002353",
+            "location": "Floor 1 - Kitchen",
+            "online": true,
+            "modelId": "84ea6e1b-7bc4-4678-ae57-9489c2ab1e7b",
+            "modelName": "Flood Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "flood": {
+                            "value": false,
+                            "lastUpdated": "2020-08-15T15:33:47.675Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 22.2,
+                            "lastUpdated": "2022-05-19T19:11:12.728Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-06-03T10:16:17.149Z"
+                        },
+                        "voltage": {
+                            "value": 3.1,
+                            "lastUpdated": "2022-05-19T17:45:02.725Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 100,
+                            "lastUpdated": "2022-05-19T18:45:20.512Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-06-14T01:23:24.497Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "5b69803c-fada-4f46-88cd-a22b67eeb5b3",
+            "name": "Røyksensor Stue",
+            "serialNumber": "0015BC0031004AAB",
+            "location": "Floor 1 - Living room",
+            "online": true,
+            "modelId": "ffe30099-92c5-4471-879f-41f412d423ab",
+            "modelName": "Smoke Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "fire": {
+                            "value": false,
+                            "lastUpdated": "2020-03-15T19:03:51.787Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 23.1,
+                            "lastUpdated": "2022-05-19T19:08:48.938Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-02-22T20:50:26.709Z"
+                        },
+                        "voltage": {
+                            "value": 2.9,
+                            "lastUpdated": "2022-05-19T15:30:36.187Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 87,
+                            "lastUpdated": "2022-05-19T18:53:25.747Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-05-25T01:40:59.339Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "8fa7dfeb-b1c4-4ad8-8d6e-d9abf2547557",
+            "name": "Røyksensor Sovgang",
+            "serialNumber": "0015BC0031006F6E",
+            "location": "Floor 2 - Bedroom",
+            "online": true,
+            "modelId": "ffe30099-92c5-4471-879f-41f412d423ab",
+            "modelName": "Smoke Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "fire": {
+                            "value": false,
+                            "lastUpdated": "2020-03-23T18:05:37.487Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 24.4,
+                            "lastUpdated": "2022-05-19T18:59:25.393Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-03-23T18:05:37.457Z"
+                        },
+                        "voltage": {
+                            "value": 2.8,
+                            "lastUpdated": "2022-01-14T18:19:23.422Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 10,
+                            "lastUpdated": "2022-05-19T19:14:28.972Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-05-25T01:43:02.139Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "309626d3-276c-4e72-ba16-95ed1325156a",
+            "name": "Røyksensor Vaskerom",
+            "serialNumber": "0015BC0031004A85",
+            "location": "Floor -1 - Laundry room",
+            "online": true,
+            "modelId": "ffe30099-92c5-4471-879f-41f412d423ab",
+            "modelName": "Smoke Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "fire": {
+                            "value": false,
+                            "lastUpdated": "2021-05-03T10:13:14.624Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 20.6,
+                            "lastUpdated": "2022-05-19T17:41:34.304Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-02-23T09:49:00.621Z"
+                        },
+                        "voltage": {
+                            "value": 3,
+                            "lastUpdated": "2020-04-01T04:55:58.904Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 80,
+                            "lastUpdated": "2022-05-19T18:52:25.980Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-05-25T01:40:39.716Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "ae8ad2cd-1ac2-4d69-8a1f-1d99243fc29d",
+            "name": "Dørsensor Veranda",
+            "serialNumber": "0015BC001E0080AD",
+            "location": "Floor 1 - Living room",
+            "online": true,
+            "modelId": "87fa1ae0-824f-4d42-be7a-cc5b6c7b1e35",
+            "modelName": "Window Sensor",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "alarm": {
+                            "value": false,
+                            "lastUpdated": "2022-05-17T18:21:36.367Z"
+                        },
+                        "tamper": {
+                            "value": false,
+                            "lastUpdated": "2020-06-02T13:59:03.582Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 22.6,
+                            "lastUpdated": "2022-05-19T19:03:51.867Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-06-02T13:58:34.850Z"
+                        },
+                        "defect": {
+                            "value": null,
+                            "lastUpdated": null
+                        },
+                        "voltage": {
+                            "value": 2.9,
+                            "lastUpdated": "2022-05-14T20:52:40.114Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 93,
+                            "lastUpdated": "2022-05-19T19:14:00.464Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-06-02T13:58:37.072Z"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "e43807b0-b0b9-4d59-ae18-64cbe4080d23",
+            "name": "Vannsensor Vaskerom",
+            "serialNumber": "0015BC0033001D74",
+            "location": "Floor -1 - Laundry room",
+            "online": true,
+            "modelId": "84ea6e1b-7bc4-4678-ae57-9489c2ab1e7b",
+            "modelName": "Flood Alarm",
+            "features": {
+                "alarm": {
+                    "states": {
+                        "flood": {
+                            "value": false,
+                            "lastUpdated": "2021-09-02T17:48:29.810Z"
+                        }
+                    }
+                },
+                "temperature": {
+                    "states": {
+                        "temperature": {
+                            "value": 19.6,
+                            "lastUpdated": "2022-05-19T18:35:08.478Z"
+                        }
+                    }
+                },
+                "battery": {
+                    "states": {
+                        "low": {
+                            "value": false,
+                            "lastUpdated": "2020-06-02T13:48:58.715Z"
+                        },
+                        "voltage": {
+                            "value": 3,
+                            "lastUpdated": "2022-05-14T17:33:46.560Z"
+                        }
+                    }
+                },
+                "diagnostic": {
+                    "states": {
+                        "networklinkstrength": {
+                            "value": 98,
+                            "lastUpdated": "2022-05-19T19:13:23.031Z"
+                        },
+                        "networklinkaddress": {
+                            "value": "0015BC002C101A3F",
+                            "lastUpdated": "2020-06-14T01:20:23.377Z"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

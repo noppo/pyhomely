@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Home",
+        "role": "OWNER",
+        "userId": "397ee986-c0b8-4334-a7e0-0174e6f4c53b",
+        "locationId": "2746e337-3848-44c6-ba43-96871273daaa",
+        "gatewayserial": "020032010000E771"
+    },
+    {
+        "name": "Cabin",
+        "role": "OWNER",
+        "userId": "397ee986-c0b8-4334-a7e0-0174e6f4c53b",
+        "locationId": "2746e337-3848-44c6-ba43-96871273daaa",
+        "gatewayserial": "024400010000E771"
+    }
+]
