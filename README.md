@@ -2,17 +2,16 @@
 Python module for integrating Homely alarm system.
 [Homely](https://www.homely.no/)
 
-Note: This module is not offically supported by Homely. 
-However it uses the 
+**Note:** This module is not offically supported by Homely. 
 
 This was designed for usage with [Home Assistant](https://home-assistant.io), but should be usable for others.
 
-##Current limitations:
+## Current limitations:
 - Status is currently experimental and code will change with short notice.
 - Does not support websockets for live updates
 
 
-##Usage:
+## Usage:
 
 ```python
 import homely
