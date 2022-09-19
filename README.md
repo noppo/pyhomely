@@ -1,4 +1,4 @@
-# py-homely
+# pyhomely
 Python module for integrating Homely alarm system.
 [Homely](https://www.homely.no/)
 

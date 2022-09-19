@@ -5,7 +5,7 @@ import os
 import sys
 sys.path.appen(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from homely import helpers
+from pyhomely import helpers
  
 # Opening JSON file
 with open('./tests/response-examples/locations.json') as locations:

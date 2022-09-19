@@ -2,15 +2,16 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+import asyncio
 import logging
 
-from homely import homely
+from pyhomely import homely
 #from homely import helpers
 
 #print all log messages
 logging.basicConfig(level=logging.NOTSET)
 
-api = homely.Homely('janegil.korsvik@gmail.com','passord')
+api = homely.Homely('janegil.korsvik@gmail.com','u60JFasNeMMT6o6C')
 locations = api.get_locations()
 
 for l in locations:
@@ -23,6 +24,6 @@ for l in locations:
         print(f'   Device:{d.name} Location:{d.location} Online:{d.online}')
 
 
-##check if refresh token method works
-api._refresh_oauth_token()
+asyncio.run(api.listen_location_changes(locations[0].locationId))
+
 

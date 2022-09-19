@@ -3,7 +3,10 @@ URL_OATH_TOKEN= 'https://sdk.iotiliti.cloud/homely/oauth/token'
 URL_OATH_REFRESH_TOKEN = 'https://sdk.iotiliti.cloud/homely/oauth/refresh-token'
 
 URL_LOCATIONS_API = 'https://sdk.iotiliti.cloud/homely/locations'
-URL_HOME_API = 'https://sdk.iotiliti.cloud/homely/home/<location_id>'
+URL_HOME_API = 'https://sdk.iotiliti.cloud/homely/home/{location_id}'
+
+URL_WEBSOCKET = 'https://sdk.iotiliti.cloud?locationId={locationId}&token=Bearer{token}'
+#URL_WEBSOCKET = 'wss://demo.piesocket.com/v3/channel_1?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self'
 
 ATTR_TOKEN = 'access_token'
 ATTR_REFRESH_TOKEN = 'refresh_token'
