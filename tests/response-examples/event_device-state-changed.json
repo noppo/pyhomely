@@ -1,3 +1,4 @@
+[
 {
     "type": "device-state-changed",
     "data": {
@@ -15,4 +16,41 @@
             }
         ]
     }
+},
+{
+    "type": "device-state-changed",
+    "data": {
+        "deviceId": "3f7fb9a8-30f0-4214-b95a-9aaaf6ae5410",
+        "gatewayId": "97c00be7-147d-42f0-89fd-ab67508ecfb6",
+        "locationId": "50d4a597-8621-4f56-ac5c-f56779b2ae55",
+        "modelId": "84ea6e1b-7bc4-4678-ae57-9489c2ab1e7b",
+        "rootLocationId": "2746e337-3848-44c6-ba43-96871273daaa",
+        "changes": [
+            {
+                "feature": "battery",
+                "stateName": "voltage",
+                "value": 3.1,
+                "lastUpdated": "2022-09-23T13:35:35.894Z"
+            }
+        ]
+    }
+},
+{
+    "type": "device-state-changed",
+    "data": {
+        "deviceId": "ae8ad2cd-1ac2-4d69-8a1f-1d99243fc29d",
+        "gatewayId": "97c00be7-147d-42f0-89fd-ab67508ecfb6",
+        "locationId": "d9f5e30b-b415-46bb-b19a-b934bdc952e5",
+        "modelId": "87fa1ae0-824f-4d42-be7a-cc5b6c7b1e35",
+        "rootLocationId": "2746e337-3848-44c6-ba43-96871273daaa",
+        "changes": [
+            {
+                "feature": "temperature",
+                "stateName": "temperature",
+                "value": 18.7,
+                "lastUpdated": "2022-09-23T13:42:48.407Z"
+            }
+        ]
+    }
 }
+]

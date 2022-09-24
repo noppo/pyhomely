@@ -11,19 +11,33 @@ from pyhomely import homely
 #print all log messages
 logging.basicConfig(level=logging.NOTSET)
 
-api = homely.Homely('janegil.korsvik@gmail.com','u60JFasNeMMT6o6C')
-locations = api.get_locations()
+async def main():
 
-for l in locations:
-    print(f'Getting data for Location:{l.name} {l.locationId}')
+    api = homely.Homely('janegil.korsvik@gmail.com','u60JFasNeMMT6o6C')
+    print(f'Getting location')
+    locations = api.get_locations()
 
-    h = api.get_home(l.locationId)
+    for l in locations:
+        print(f'Location = {l.to_string()}')
 
-    print(f' Home:{h.name} AlarmState:{h.alarmState}')
-    for d in h.devices:
-        print(f'   Device:{d.name} Location:{d.location} Online:{d.online}')
+        h = api.get_home(l.locationId)
 
+        print(f'   Home = {h.to_string()}')
+        for d in h.devices:
+            print(f'      Device = {d.to_string()}')
 
-asyncio.run(api.listen_location_changes(locations[0].locationId))
+            for s in d.states:
+                print(f'         State = {s.to_string()}')
 
+    await api.listen_for_changes(changes_callback)
+    #await api.listen_for_device_changes('asdfasdf')
 
+def changes_callback(type, change):
+    print(f'*** Change Type: {type}')
+    if type == 'device-state-changed':
+        print(f'Device = {change.parentDevice.to_string()}')
+    print(f'   Change = {change.to_string()}')
+    
+
+if __name__ == "__main__":
+    asyncio.run(main())
