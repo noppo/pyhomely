@@ -9,7 +9,7 @@ import socketio
 from datetime import datetime
 
 
-from .helpers import Location, Home
+from .helpers import Location, Home, Device, State
 
 
 from .helpers import (

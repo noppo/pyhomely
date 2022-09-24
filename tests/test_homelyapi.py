@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.NOTSET)
 
 async def main():
 
-    api = homely.Homely('janegil.korsvik@gmail.com','u60JFasNeMMT6o6C')
+    api = homely.Homely('janegil.korsvik@gmail.com','blablabla')
     print(f'Getting location')
     locations = api.get_locations()
 
